@@ -1,41 +1,29 @@
-import logo from './logo.svg';
-import React from 'react';
-import ReactDOM from 'react';
-import './App.css';
+import React, { useState } from 'react';
 
+const FirstApp = ({value}) => {
 
+  const [counter, setCounter] = useState(value);
 
-const FirstApp = () => {
+ 
+  const handleSubtract = () => {
+    
+    setCounter(counter - 1);
+  };
+
+  
+  const handleReset = () => {
+  
+    setCounter(value);
+  };
+
   return (
     <div>
-      <h1>Contador</h1>
-      <span>10</span>
+      <h1>Nuevo Título</h1>
+      <span>{counter}</span> {}
+      <br />
+      <button onClick={handleSubtract}>Restar</button>
+      <button onClick={handleReset}>Reiniciar</button> 
     </div>
   )
 }
-
-
 export default FirstApp;
-
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
