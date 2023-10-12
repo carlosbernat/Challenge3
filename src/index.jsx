@@ -6,6 +6,7 @@ import FirstApp from './FirstApp';
 import  ComponentApp  from './ComponentApp';
 import  GifExpertApp from './GitfExpertApp';
 import reportWebVitals from './reportWebVitals';
+import DataDisplay from './DataDisplay';
 
 
 
@@ -16,6 +17,7 @@ root.render(
     <FirstApp value = {20} />
     <ComponentApp />
     <GifExpertApp />
+    <DataDisplay />
   </React.StrictMode>
 );
 
