@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCounter } from './components/useCounter';
+import { useCounter } from './helpers/useCounter';
 
 
 const FirstApp = ({ value }) => {

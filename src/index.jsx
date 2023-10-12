@@ -8,6 +8,10 @@ import  GifExpertApp from './GitfExpertApp';
 import reportWebVitals from './reportWebVitals';
 import DataDisplay from './DataDisplay';
 import MultipleCustomHooks from './components/MultipleCustomHooks';
+import { Father } from './components/Father';
+import { CallbackHook } from './components/CallbackHook';
+import { MemoHook } from './components/MemoHook';
+import { Memorize } from './components/Memorize';
 
 
 
@@ -19,6 +23,10 @@ root.render(
     <ComponentApp />
     <GifExpertApp />
     <DataDisplay />
+    <Father />
+    <CallbackHook />
+    <MemoHook />
+    <Memorize />
     <MultipleCustomHooks />
   </React.StrictMode>
 );
