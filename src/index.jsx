@@ -4,6 +4,7 @@ import './index.css';
 
 import FirstApp from './FirstApp';
 import  ComponentApp  from './ComponentApp';
+import  GifExpertApp from './GitfExpertApp';
 import reportWebVitals from './reportWebVitals';
 
 
@@ -14,6 +15,7 @@ root.render(
     
     <FirstApp value = {20} />
     <ComponentApp />
+    <GifExpertApp />
   </React.StrictMode>
 );
 

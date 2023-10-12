@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
-// Script hecho con ayuda de ChatGPT lanzandole los prompts del challenge en espanol y lanzando un segundo prompt que dice que haga uso del useState.
-
+// Script hecho con ayuda de ChatGPT lanzandole los prompts del challenge en espanol y lanzando un segundo prompt que dice que haga uso delg
 const ComponentApp = () => {
   const [category, setCategory] = useState('');
   const [categories, setCategories] = useState(['first category', 'second category']);
