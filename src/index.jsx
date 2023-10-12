@@ -7,6 +7,7 @@ import  ComponentApp  from './ComponentApp';
 import  GifExpertApp from './GitfExpertApp';
 import reportWebVitals from './reportWebVitals';
 import DataDisplay from './DataDisplay';
+import MultipleCustomHooks from './components/MultipleCustomHooks';
 
 
 
@@ -18,6 +19,7 @@ root.render(
     <ComponentApp />
     <GifExpertApp />
     <DataDisplay />
+    <MultipleCustomHooks />
   </React.StrictMode>
 );
 
