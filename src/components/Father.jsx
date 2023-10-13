@@ -1,13 +1,16 @@
+// Father.jsx
 import React, { useState } from "react";
 import { Son } from "./Son";
 
-const list = [2, 4, 6, 8, 10];
 
 export const Father = () => {
+  const list = [2, 4, 6, 8, 10];
   const [valor, setValor] = useState(0);
 
+  console.log("Father component re-rendered");
+
   const increment = (num) => {
-    setValor(valor + num);
+    setValor((prevValor) => prevValor + num);
   };
 
   return (
@@ -16,9 +19,15 @@ export const Father = () => {
       <p> Total: {valor} </p>
       <hr />
 
-      {list.map((n, idx) => (
-        <Son key={idx} numero={n} increment={increment} />
-      ))}
+      {list.map((n, idx) => {
+        return (
+          <Son
+            key={idx}
+            numero={n}
+            increment={increment}
+          />
+        );
+      })}
     </div>
   );
 };

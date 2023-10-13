@@ -12,7 +12,7 @@ import { Father } from './components/Father';
 import { CallbackHook } from './components/CallbackHook';
 import { MemoHook } from './components/MemoHook';
 import { Memorize } from './components/Memorize';
-
+import { TodoApp } from './components/TodoApp';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,6 +28,7 @@ root.render(
     <MemoHook />
     <Memorize />
     <MultipleCustomHooks />
+    <TodoApp />
   </React.StrictMode>
 );
 
