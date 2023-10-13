@@ -13,12 +13,15 @@ import { CallbackHook } from './components/CallbackHook';
 import { MemoHook } from './components/MemoHook';
 import { Memorize } from './components/Memorize';
 import { TodoApp } from './components/TodoApp';
+import './styles.css';
+import NavComponent from './components/NavComponent';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     
+    <NavComponent />
     <FirstApp value = {20} />
     <ComponentApp />
     <GifExpertApp />

@@ -1,0 +1,38 @@
+/* NavComponent.css */
+
+/* Estilo para el contenedor de la barra de navegación */
+.navbar {
+    background-color: #333; /* Color de fondo de la barra de navegación */
+    color: #fff; /* Color del texto en la barra de navegación */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Estilo para la lista de elementos de navegación */
+  .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  /* Estilo para los elementos de la lista de navegación */
+  .nav-item {
+    margin: 0 1rem;
+  }
+  
+  /* Estilo para los enlaces de navegación */
+  .nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s ease; /* Efecto de transición al pasar el mouse */
+  }
+  
+  /* Cambio de color al pasar el mouse sobre los enlaces */
+  .nav-link:hover {
+    color: #ff5733;
+  }
+  
