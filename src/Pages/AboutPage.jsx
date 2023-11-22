@@ -1,7 +1,6 @@
 import React from "react";
-import { useCounter } from "../helpers/useCounter";
+import { useCounter } from "../hooks/useCounter";
 import { useFetch } from "../hooks/useFetch";
-import TodoList from "../components/TodoList";
 
 export const AboutPage = () => {
   const { counter, add } = useCounter(1);
@@ -27,5 +26,3 @@ export const AboutPage = () => {
     </>
   );
 };
-
-export default AboutPage;

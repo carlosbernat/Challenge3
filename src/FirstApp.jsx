@@ -1,20 +1,26 @@
-import React from 'react';
-import { useCounter } from './helpers/useCounter';
-
+import { useState } from "react";
 
 const FirstApp = ({ value }) => {
-  const { count, increment, decrement, reset } = useCounter();
+  const [counter, setCounter] = useState(value);
+
+  const handleAdd = () => {
+    setCounter(counter + 1);
+  };
+  const subtracts = () => {
+    setCounter(counter - 1);
+  };
+  const reset = () => {
+    setCounter(value);
+  };
 
   return (
-    <div>
-      <h1>Contador Challenge 5</h1>
-      <span>{count}</span>
-      <br />
-      <button onClick={decrement}>Restar -1</button>
-      <button onClick={reset}>Reiniciar</button>
-      <button onClick={increment}>Sumar +1</button>
-    </div>
+    <>
+      <h1> counter </h1>
+      <sapn> {counter} </sapn>
+      <button onClick={() => handleAdd()}> +1 </button>
+      <button onClick={() => subtracts()}> -1 </button>
+      <button onClick={() => reset()}> reset </button>
+    </>
   );
 };
-
 export default FirstApp;

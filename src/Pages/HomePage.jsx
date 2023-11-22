@@ -1,6 +1,6 @@
 import { TodoAdd } from "../components/TodoAdd";
-import TodoList from "../components/TodoList"; 
-import { useTODO } from "../components/useTODO";
+import { TodoList } from "../components/TodoList";
+import { useTODO } from "../hooks/useTODO";
 
 export const HomePage = () => {
   const {
@@ -30,5 +30,3 @@ export const HomePage = () => {
     </>
   );
 };
-
-export default HomePage;

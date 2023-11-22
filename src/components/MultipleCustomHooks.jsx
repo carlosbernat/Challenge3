@@ -1,21 +1,28 @@
-import React, { useState } from 'react';
-import BreakingBadQuote from './BreakingBadQuote';
+import React from "react";
+import { useCounter } from "../hooks/useCounter";
+import { useFetch } from "../hooks/useFetch";
 
-const MultipleCustomHooks = () => {
-  const [counter, setCounter] = useState(1);
-
-  const handleIncrement = () => {
-    setCounter(counter + 1);
-  };
-
+export const MultipleCustomHook = () => {
+  const { counter, add } = useCounter(1);
+  const { data, isLoading, hasError } = useFetch(
+    `https://breakingbadapi.com/api/quotes/${counter}`
+  );
   return (
-    <div>
-      <h2>Multiple Custom Hooks</h2>
-      <p>Counter: {counter}</p>
-      <button onClick={handleIncrement}>Increment Counter</button>
-      <BreakingBadQuote />
-    </div>
+    <>
+      <h1>MultipleCustomHook</h1>
+      <hr />
+      {isLoading ? (
+        <div className="aler alert-info text-center">Loading...</div>
+      ) : (
+        <blockquote className="blockquuote text-end">
+          <p className="mb-1">7+{data[0]?.quote}</p>
+          <footer className="blockquote-footer">{data[0]?.author}</footer>
+        </blockquote>
+      )}
+      <button className="btn btn-primary" onClick={() => add()}>
+        Next Quote
+      </button>
+        
+    </>
   );
 };
-
-export default MultipleCustomHooks;

@@ -1,6 +1,4 @@
-/* styles.css */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
-/* Agrega estilos personalizados aquí, si es necesario */
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
