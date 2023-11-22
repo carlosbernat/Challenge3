@@ -15,7 +15,9 @@ import { Memorize } from './components/Memorize';
 import { TodoApp } from './components/TodoApp';
 import './styles.css';
 import NavComponent from './components/NavComponent';
-
+import HomePage from './Pages/HomePage';
+import AboutPage from './Pages/AboutPage';
+import PrivateRoute from './Context/PrivateRoute';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -32,6 +34,11 @@ root.render(
     <Memorize />
     <MultipleCustomHooks />
     <TodoApp />
+    <HomePage />
+    <AboutPage />
+
+    <PrivateRoute />
+
   </React.StrictMode>
 );
 

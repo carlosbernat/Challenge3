@@ -14,3 +14,5 @@ export const TodoItem = ({ todo, onDelete }) => {
     </li>
   );
 };
+
+export default TodoItem

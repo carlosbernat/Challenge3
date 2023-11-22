@@ -30,3 +30,5 @@ export const TodoAdd = ({ onNewTodo }) => {
     </form>
     )
 }
+
+export default TodoAdd;

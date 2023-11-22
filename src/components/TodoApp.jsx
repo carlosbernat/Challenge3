@@ -50,3 +50,5 @@ export const TodoApp = () => {
     </>
   );
 };
+
+export default TodoApp;
